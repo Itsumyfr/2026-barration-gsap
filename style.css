@@ -1,0 +1,65 @@
+/* Bases --------------------- */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Variables ----------------- */
+:root{
+    /* Colors */
+    --c-main: #C40123;
+    --c-main2: #0000;
+    --c-main3: #ffff;
+
+    /* Sizes */
+    --s-padding: 10px;
+    --s-b-radius: 20px;
+}
+
+/* Typographies -------------- */
+
+/* Design de la page --------- */
+
+/* Header === */
+header{
+    background-color: var(--c-main);
+    padding: var(--s-padding);
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo{
+    width: 48px;
+}
+
+nav a{
+    color: var(--c-main3);
+    text-decoration: none;
+    margin-right: 15px;
+
+}
+
+/* Global === */
+.h100{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section Hero == */
+#sectionHero{
+    background-image: url();
+}
+
+/* Section Présentation */
+
+/* Sections Projets */
+.block{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+}
