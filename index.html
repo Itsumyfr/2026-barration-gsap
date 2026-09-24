@@ -6,8 +6,11 @@
     <title>Projet GSAP</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/svg" href="assets/img/logo_t.svg">
-</head>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+</head>
 <body>
     <!-- Header ============ -->
     <header>
@@ -15,38 +18,102 @@
             <img id=logo src="assets/img/logo_t.svg" alt="Logo temporaire Flat Out">
         </a>
         <nav>
-            <a href="">Accueil</a>
-            <a href="">Présentation</a>
-            <a href="">Projets</a>
+            <a href="#sectionHero">Accueil</a>
+            <a href="#sectionPres">Présentation</a>
+            <a href="#sectionProjets">Projets</a>
+            <a href="#sectionContact">Contact</a>
         </nav>
     </header>
 
     <!-- Section 1 ========= -->
     <section id="sectionHero" class="h100">
-        <div id="movingBlock1" class="block"></div>
+        <!-- ce qui est marquer après vidéo c'est pour faire loop la vidéo, la mut et la lancer automatiquement au lancement -->
+        <video autoplay muted loop playsinline id="background" src="assets/video/teste_video.MOV"> crédit : @ctrllx sur TikTok </video>
+        <div id="revealText" >
+          <h1 class="h1-sectionHero">Flat Out</h1>
+          <p class="p-sectionHero">PORTFOLIO 2k26</p>  
+        </div>
+        <img id="formulaMoving" src="assets/img/ferrari2026.png" alt="image png de la F1 ferrari de 2026">     
     </section>
 
     <!-- Section 2 ========= -->
-    <section id="presentation" class="h100">
-        <div id="movingBlock2" class="block"></div>
+    <section id="sectionPres">
+
+        <div id="boxText" >
+            <h1 class="h1-sectionPres">A propos</h1>
+            <p class="p1-sectionPres">Je m'appel Louna Henot-Roffé, j'ai 18 ans et je suis passionnée par la création. J'aime le montage, le design, la guitare. Je fait de la création de contenue. J'ai déjà participé à la réalisation de courmétrages, en écrivant le scénario, en participant au tournage et en faisant le montage.
+                J'ai réalisé un stage chez MyUP.AI où j'ai réalisé des templates et un compage de e-mailing.
+            </p>
+             <p class="p2-sectionPres">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare id sapien et placerat. Duis sollicitudin mollis turpis, quis accumsan orci auctor id. Aenean sem enim, mattis id turpis eget, dapibus convallis eros. Proin accumsan felis mauris, et ullamcorper turpis pellentesque ut. Proin lectus massa, maximus sed sodales in, commodo a neque. Duis purus nisi, fringilla eu mattis quis, posuere id tellus. Mauris mollis venenatis sagittis. Integer sed ultrices arcu. Proin eget sapien nunc. Etiam in malesuada ex, ut feugiat justo. Nulla convallis, risus id porta pretium, ex nisi mattis dui, sit amet bibendum arcu felis ut dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis in vehicula nunc. Cras molestie accumsan metus, ac fermentum magna vulputate at. Praesent diam enim, consequat quis tellus accumsan, gravida sollicitudin risus. Maecenas ante velit, laoreet ullamcorper neque id, auctor pretium ex.</p>
+        </div>
+
+        <div id="boxCompetences">
+            <h1 class="h1-sectionPres">Mes Compétences</h1>
+            <div id="boxHaut">
+                <img src="assets/img/ps_logo.png" alt="logo du logiciel photoshop">
+                <img src="assets/img/pr_logo.png" alt="logo du logiciel première pro">
+                <img src="assets/img/figma_logo.png" alt="logo du logiciel figma">
+            </div>
+            <div id="boxBas">
+                <img src="assets/img/davinci_logo.png" alt="logo du logiciel davinci resolve">
+                <img src="assets/img/ai_logo.png" alt="logo du logiciel illustratot">
+                <img src="assets/img/vscode_logo.png" alt="logo du logiciel vs code">
+            </div>
+        </div>
+
+        <img id="moi" src="assets/img/moi-flou-normal.png" alt="Photo de Louna aka Flat Out avec un effet de flou">
+
     </section>
 
     <!-- Section 3 ========= -->
-    <section id="projets" class="h100">
-        <div id="movingBlock3" class="block"></div>
-    </section>
+    <section id="sectionProjets">
+        <h1 class="h1-sectionProjets">Mes Projets</h1>
+        <di id="projets">
+            <!-- card projet -->
+            <!-- Card 1 -->
+            <div id="card_projet" >
+                <img class="card_media" src="assets/img/2dream 2nightmare.avif" alt="affiche du courmétrage 2 dream 2 nightmare">
+                <!-- Entête de la carte -->
+                <div id="card_header">
+                  <h2 class="h2-sectionProjets">Cinéma</h2>
+                  <div id="card_badge">
+                    <span class="badge">2025</span>
+                    <span class="badge">ESD</span>
+                  </div>
+                </div>
+                <!-- Description -->
+                <p class="p-sectionProjets">Ce courmétrage à été réaliser lors d'une semaine projet à l'ESD. Il à été réaliser en 5 jours tout compris.</p>
+            </div>
+            <!-- Card 2 -->
+            <div id="card_projet">
+                <img class="card_media" src="assets/img/design_partiel.png" alt="ilage de d'une maquette d'application de musique">
+                <div id="card_header">
+                    <h2 class="h2-sectionProjets">Web Design</h2>
+                    <div id="card_badge">
+                        <span class="badge">2025</span>
+                        <span class="badge">Partiel</span>
+                    </div>
+                </div>
+                <!-- Description -->
+                <p class="p-sectionProjets">Réalisation d'une maquette d'application de musique en fonction du mood, réaliser lors d'un partiel.</p>
+            </div>
+            <!-- Card 3 -->
+            <div id="card_projet">
+                <img class="card_media" src="assets/img/crea_contenue.png" alt="image du feed instagram du compte @lhr_flatout">
+                <div id="card_header">
+                    <h2 class="h2-sectionProjets">LHR_FlatOut</h2>
+                    <div id="card_badge">
+                        <span class="badge">2026</span>
+                        <span class="badge">Moi</span>
+                    </div>
+                </div>
+                <!-- Description -->
+                <p class="p-sectionProjets">LHR_FlatOut est mon pseudo pour la création de mon contenue autour de la Formule 1 sur plusieurs plateformes.</p>
+            </div>
+        </div>
 
-    <!-- Section 4 ========= -->
-    <section id="section4" class="h100 bg-dark">
-        <div id="movingBlock4" class="block"></div>
     </section>
     
-    <!-- Footer =========== -->
-    <footer>
-
-    </footer>
-
-
     <!-- Scripts =========== -->
     <!-- GSAP === -->
     <script src="js/GSAP/gsap.min.js"></script>
