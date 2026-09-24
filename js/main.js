@@ -21,6 +21,13 @@ tl.fromTo("#formulaMoving",
 );
 
 /* Animation deuxième section - ScollTrigger - seul les div compétence bouge au scroll*/
+
+function katchow(){ //easter egg cars
+    var audio = new Audio('assets/son/katchow.mp3');
+    audio.play();
+}
+
+
 // Source Gémini
 const tl2 = gsap.timeline({
     scrollTrigger: {
@@ -49,7 +56,7 @@ tl2
     },
     {
         opacity: 1, 
-        y: -150, 
+        y: -140, 
         duration: 1,
         ease: "power1.inOut",
         onStart: () => { document.querySelector('#boxCompetences').style.pointerEvents = 'all'; }
@@ -65,20 +72,19 @@ tl2
     }, 0.5);
 
 /* Animation troisième section - Draggable */
+const CORRECT_ORDER = ["1", "2", "3"]; // ordre attendu
+
 Draggable.create("#card_projet", {
-    //type: 'y',
+    type: 'x',
     bounds: '#sectionProjets',
-    dragResistance: 0.5,
+    dragResistance: 0.65,
+
+    onDragStart() { //S'exécute au moment où tu cliquesl'élément 
+    gsap.to(this.target, { scale: 1.05, zIndex: 10, duration: 0.2 });
+  },
+    onDragEnd() {//S'exécute au moment où tu lâches le clic
+    gsap.to(this.target, { scale: 1, zIndex: 1, duration: 0.2 });
+  }
 })
 
-/* Animation troisième block - Timeline 
-let tl = gsap.timeline({
-    repeat: -1,
-    yoyo: true,
-})
-
-tl.to("#movingBlock3",{x: 100, })
-.to("#movingBlock3",{y: 100, })
-.to("#movingBlock3",{x: -100, })
-.to("#movingBlock3",{y: -100, })*/
 

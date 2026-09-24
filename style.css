@@ -17,6 +17,10 @@ html {
     --c-main3: #ffff;
     --c-second: #838383;
 
+    /* Colors changement de theme */
+    --c-changement1: #00162B;
+    --c-changement2: #FF8000;
+
     /* Sizes */
     --s-padding: 10px;
     --s-b-radius: 20px;
@@ -237,11 +241,40 @@ nav a{
     margin: 12px 0 5px 0;
 }
 
-/* Sections Contact
-#sectionContact{
-    width: 100vh;
-    background-color: var(--c-main2);
+
+/* Footer ========= */
+footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-} */
+
+    background-color: var(--c-main);
+    padding: var(--s-padding);
+}
+
+#socials{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.p-footer1, .p-footer2{
+    color: var(--c-main3);
+}
+
+.p-footer1{
+    font-size: 17px;
+}
+
+#reseaux{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+}
+
+.media_reseaux{
+    width: 23px;
+}

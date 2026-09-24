@@ -21,7 +21,6 @@
             <a href="#sectionHero">Accueil</a>
             <a href="#sectionPres">Présentation</a>
             <a href="#sectionProjets">Projets</a>
-            <a href="#sectionContact">Contact</a>
         </nav>
     </header>
 
@@ -61,7 +60,7 @@
             </div>
         </div>
 
-        <img id="moi" src="assets/img/moi-flou-normal.png" alt="Photo de Louna aka Flat Out avec un effet de flou">
+        <img id="moi" onclick="katchow()" src="assets/img/moi-flou-normal.png" alt="Photo de Louna aka Flat Out avec un effet de flou">
 
     </section>
 
@@ -70,8 +69,21 @@
         <h1 class="h1-sectionProjets">Mes Projets</h1>
         <di id="projets">
             <!-- card projet -->
+            <!-- Card 2 -->
+            <div id="card_projet" data-order="2">
+                <img class="card_media" src="assets/img/design_partiel.png" alt="ilage de d'une maquette d'application de musique">
+                <div id="card_header">
+                    <h2 class="h2-sectionProjets">Web Design</h2>
+                    <div id="card_badge">
+                        <span class="badge">2025</span>
+                        <span class="badge">Partiel</span>
+                    </div>
+                </div>
+                <!-- Description -->
+                <p class="p-sectionProjets">Réalisation d'une maquette d'application de musique en fonction du mood, réaliser lors d'un partiel.</p>
+            </div>
             <!-- Card 1 -->
-            <div id="card_projet" >
+            <div id="card_projet" data-order="1">
                 <img class="card_media" src="assets/img/2dream 2nightmare.avif" alt="affiche du courmétrage 2 dream 2 nightmare">
                 <!-- Entête de la carte -->
                 <div id="card_header">
@@ -84,21 +96,8 @@
                 <!-- Description -->
                 <p class="p-sectionProjets">Ce courmétrage à été réaliser lors d'une semaine projet à l'ESD. Il à été réaliser en 5 jours tout compris.</p>
             </div>
-            <!-- Card 2 -->
-            <div id="card_projet">
-                <img class="card_media" src="assets/img/design_partiel.png" alt="ilage de d'une maquette d'application de musique">
-                <div id="card_header">
-                    <h2 class="h2-sectionProjets">Web Design</h2>
-                    <div id="card_badge">
-                        <span class="badge">2025</span>
-                        <span class="badge">Partiel</span>
-                    </div>
-                </div>
-                <!-- Description -->
-                <p class="p-sectionProjets">Réalisation d'une maquette d'application de musique en fonction du mood, réaliser lors d'un partiel.</p>
-            </div>
             <!-- Card 3 -->
-            <div id="card_projet">
+            <div id="card_projet" data-order="3">
                 <img class="card_media" src="assets/img/crea_contenue.png" alt="image du feed instagram du compte @lhr_flatout">
                 <div id="card_header">
                     <h2 class="h2-sectionProjets">LHR_FlatOut</h2>
@@ -111,8 +110,23 @@
                 <p class="p-sectionProjets">LHR_FlatOut est mon pseudo pour la création de mon contenue autour de la Formule 1 sur plusieurs plateformes.</p>
             </div>
         </div>
-
     </section>
+
+
+    <footer>
+        <div id="socials">
+            <p class="p-footer1">Social</p>
+            <div id="reseaux">
+                <a href="https://www.instagram.com/lhr_flatout/">
+                    <img class="media_reseaux" src="assets/img/logo_insta.png" alt="logo instagram">  
+                </a>
+                <a href="https://www.tiktok.com/@lhr_flatout">
+                    <img class="media_reseaux" src="assets/img/logo_tiktok.png" alt="logo tiktok">   
+                </a>
+            </div>
+        </div>
+        <p class="p-footer2">© 2026 Flat Out</p>
+    </footer>
     
     <!-- Scripts =========== -->
     <!-- GSAP === -->
